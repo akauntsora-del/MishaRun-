@@ -1,0 +1,26 @@
+name: Export Android APK
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Export
+        uses: dulvui/godot-android-export@v3.0.0
+        with:
+          godot-version: "4.4"
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: android-apk
+          path: "*.apk"
