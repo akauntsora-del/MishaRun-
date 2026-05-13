@@ -17,7 +17,8 @@ jobs:
       - name: Export
         uses: dulvui/godot-android-export@v3.0.0
         with:
-          godot-version: "4.4"
+          godot-version: "4.6"
+          godot-release-channel: "stable"
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
