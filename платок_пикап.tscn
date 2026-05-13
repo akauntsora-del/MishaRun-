@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cidhsg5w0c3ej"]
+
+[ext_resource type="Texture2D" uid="uid://di4u6t30kbs84" path="res://Gemini_Generated_Image_2bn1zn2bn1zn2bn1 (1).png" id="1_1hrr4"]
+[ext_resource type="Script" uid="uid://bf8prn0pg26mh" path="res://platkok_pickup.gd" id="1_yw7yo"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_yw7yo"]
+radius = 0.1
+
+[node name="Node3D" type="Node3D" unique_id=628912500]
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1195750828]
+script = ExtResource("1_yw7yo")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=204685257]
+shape = SubResource("SphereShape3D_yw7yo")
+
+[node name="Sprite" type="Sprite3D" parent="Area3D" unique_id=1375728619]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
+texture = ExtResource("1_1hrr4")

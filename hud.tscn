@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://klggu26x8bqe"]
+
+[ext_resource type="Script" uid="uid://bumrchgbxwnry" path="res://hud.gd" id="1_37p78"]
+
+[node name="CoinsLabel" type="Node3D" unique_id=1043061972]
+
+[node name="hud" type="CanvasLayer" parent="." unique_id=1366573801]
+script = ExtResource("1_37p78")
+
+[node name="DistanceLabel" type="Label" parent="hud" unique_id=971076743]
+offset_left = 20.0
+offset_top = 70.0
+offset_right = 64.0
+offset_bottom = 115.0
+theme_override_font_sizes/font_size = 32
+text = "0м"
+
+[node name="CoinsLabel" type="Label" parent="hud" unique_id=1134492137]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 60.0
+offset_bottom = 69.0
+theme_override_font_sizes/font_size = 32
+text = "💰 0
+"

@@ -1,0 +1,47 @@
+[gd_scene format=4 uid="uid://cwxnsg7vi13nj"]
+
+[ext_resource type="Texture2D" uid="uid://xjn1vajsmmr5" path="res://trollface_head_for_free_0.png" id="1_bvc5f"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kv07o"]
+resource_name = "material"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("1_bvc5f")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_gogt0"]
+_surfaces = [{
+"aabb": AABB(-0.5, -0.5, 0, 1, 1, 1e-05),
+"format": 34359742465,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAgABAAMA"),
+"name": "material",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAvwAAAL8AAAAAAAAAvwAAAD8AAAAAAAAAPwAAAL8AAAAAAAAAPwAAAD8AAAAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_wtrxv"]
+resource_name = "Sketchfab_Scene_Object_0"
+_surfaces = [{
+"aabb": AABB(-0.5, -0.5, 0, 1, 1, 1e-05),
+"attribute_data": PackedByteArray("AAAAAAAAgD8AAAAAAAAAAAAAgD8AAIA/AACAPwAAAAA="),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAgABAAMA"),
+"material": SubResource("StandardMaterial3D_kv07o"),
+"name": "material",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAvwAAAL8AAAAAAAAAvwAAAD8AAAAAAAAAPwAAAL8AAAAAAAAAPwAAAD8AAAAA/3//f////7//f/9/////v/9//3////+//3//f////78=")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_gogt0")
+
+[node name="Sketchfab_Scene" type="Node3D" unique_id=1767690575]
+
+[node name="Object_5" type="MeshInstance3D" parent="." unique_id=1242316580]
+transform = Transform3D(1.0200019, 0, 0, 0, 0.8400015, 0, 0, 0, 0.001, 0.008567345, -0.20080087, 0.3)
+mesh = SubResource("ArrayMesh_wtrxv")

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://wefg8bkccf4a"
+path="res://.godot/imported/The Pixies — Where is me mind (www (mp3cut.net).mp3-bc698eaeaf9ae8f42a6b0480e9d6ebf5.mp3str"
+
+[deps]
+
+source_file="res://The Pixies — Where is me mind (www (mp3cut.net).mp3"
+dest_files=["res://.godot/imported/The Pixies — Where is me mind (www (mp3cut.net).mp3-bc698eaeaf9ae8f42a6b0480e9d6ebf5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

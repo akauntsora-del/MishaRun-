@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://lep6csnqiff2"]
+
+[ext_resource type="Script" uid="uid://jo7ddtp4mprm" path="res://road_tile.gd" id="1_5s150"]
+[ext_resource type="Texture2D" uid="uid://cthgeeknybl3r" path="res://дорога.jpg" id="2_74g5e"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_64rvv"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yy7qq"]
+albedo_texture = ExtResource("2_74g5e")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5s150"]
+
+[node name="RoadTile" type="Node3D" unique_id=619226967]
+script = ExtResource("1_5s150")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1044804736]
+
+[node name="Road" type="MeshInstance3D" parent="StaticBody3D" unique_id=1342295242]
+transform = Transform3D(12, 0, 0, 0, 0.3, 0, 0, 0, 20, 0, 0, 0)
+mesh = SubResource("BoxMesh_64rvv")
+surface_material_override/0 = SubResource("StandardMaterial3D_yy7qq")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=987270759]
+transform = Transform3D(12, 0, 0, 0, 0.3, 0, 0, 0, 20, 0, 0, 0)
+shape = SubResource("BoxShape3D_5s150")
